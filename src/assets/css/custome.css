@@ -1,0 +1,8 @@
+@import "main.css";
+@import "responsive.css";
+@import "style.css";
+
+slick-dots{
+    bottom: 15px !important;
+    width: auto !important;
+    }
