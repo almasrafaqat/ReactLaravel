@@ -1,6 +1,6 @@
 class AppURL{
-   
-    static HomeURL = "https://laravel.almasthemes.com/public/api";
+    static HomeURL = "http://127.0.0.1:8000/api";
+    // static HomeURL = "https://laravel.almasthemes.com/public/api";
     static LoginPage = this.HomeURL+"/login";
     static RegisterPage = this.HomeURL+"/register";
     static ForgetPasswordPage = this.HomeURL+"/forget/password";

@@ -153,10 +153,6 @@ li.hr span {
   color: #838383;
 }
 
-:-ms-input-placeholder {
-  color: #838383;
-}
-
 ::placeholder {
   color: #838383;
 }
@@ -517,23 +513,6 @@ h4 {
   transition: all 0.3s ease 0s;
 }
 
-@-webkit-keyframes slideleft {
-  10% {
-    opacity: 0;
-    transform: scale(0);
-    right: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  90% {
-    opacity: 0;
-    transform: scale(0);
-    right: 100%;
-  }
-}
-
 @keyframes slideleft {
   10% {
     opacity: 0;
@@ -554,22 +533,9 @@ h4 {
   width: 35px;
   height: 35px;
   display: inline-block;
-  -webkit-animation: spinner 1.2s infinite ease-in-out;
   animation: spinner 1.2s infinite ease-in-out;
   background: url(../imgs/favicon.svg);
   box-shadow: 0 0 10px #fff;
-}
-
-@-webkit-keyframes spinner {
-  0% {
-    transform: perspective(120px) rotateX(0) rotateY(0);
-  }
-  50% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(0);
-  }
-  100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
-  }
 }
 @keyframes spinner {
   0% {
@@ -582,14 +548,6 @@ h4 {
     transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
   }
 }
-@-webkit-keyframes shadow-pulse {
-  0% {
-    box-shadow: 0 0 0 0px rgba(239, 63, 72, 0.8);
-  }
-  100% {
-    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
-  }
-}
 @keyframes shadow-pulse {
   0% {
     box-shadow: 0 0 0 0px rgba(239, 63, 72, 0.8);
@@ -598,28 +556,12 @@ h4 {
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
   }
 }
-@-webkit-keyframes shadow-pulse-big {
-  0% {
-    box-shadow: 0 0 0 0px rgba(239, 63, 72, 0.1);
-  }
-  100% {
-    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
-  }
-}
 @keyframes shadow-pulse-big {
   0% {
     box-shadow: 0 0 0 0px rgba(239, 63, 72, 0.1);
   }
   100% {
     box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
-  }
-}
-@-webkit-keyframes jump {
-  0% {
-    transform: translate3d(0, 20%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
   }
 }
 @keyframes jump {
@@ -632,8 +574,7 @@ h4 {
 }
 .jump {
   transform-origin: 0;
-  -webkit-animation: jump 0.5s linear alternate infinite;
-          animation: jump 0.5s linear alternate infinite;
+  animation: jump 0.5s linear alternate infinite;
 }
 
 /*TYPOGRAPHY*/
@@ -1523,11 +1464,6 @@ label {
   color: #999999;
   color: #777777;
 }
-.form-control:-ms-input-placeholder {
-  font-weight: 300;
-  color: #999999;
-  color: #777777;
-}
 .form-control::placeholder {
   font-weight: 300;
   color: #999999;
@@ -1576,65 +1512,45 @@ input.qty-val {
 
 /*COMPONENTS -> SLIDER*/
 .single-animation-wrap.slick-active .slider-animated-1 h1 {
-  -webkit-animation-delay: 1.4s;
   animation-delay: 1.4s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 .single-animation-wrap.slick-active .slider-animated-1 h2 {
-  -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 .single-animation-wrap.slick-active .slider-animated-1 h3 {
-  -webkit-animation-delay: 1s;
   animation-delay: 1s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 .single-animation-wrap.slick-active .slider-animated-1 h4 {
-  -webkit-animation-delay: 1s;
   animation-delay: 1s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 .single-animation-wrap.slick-active .slider-animated-1 span {
-  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 .single-animation-wrap.slick-active .slider-animated-1 p {
-  -webkit-animation-delay: 1.7s;
   animation-delay: 1.7s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 .single-animation-wrap.slick-active .slider-animated-1 a.btn {
-  -webkit-animation-delay: 2s;
   animation-delay: 2s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 .single-animation-wrap.slick-active .slider-animated-1.slider-product-price {
-  -webkit-animation-delay: 1.2s;
   animation-delay: 1.2s;
-  -webkit-animation-name: flipInY;
   animation-name: flipInY;
 }
 .single-animation-wrap.slick-active .slider-animated-1 .single-slider-img img {
-  -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 
 .single-animation-wrap.slick-active .slider-animated-1 .slider-product-offer-wrap,
 .single-animation-wrap.slick-active .slider-animated-1 .slider-product-offer-wrap-2 {
-  -webkit-animation-delay: 1s;
   animation-delay: 1s;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
 
@@ -2444,38 +2360,31 @@ input.qty-val {
   background: #3BB77E;
   opacity: 0;
   border-radius: 10px;
-  -webkit-animation: slideleft 3s ease-in-out infinite;
-          animation: slideleft 3s ease-in-out infinite;
+  animation: slideleft 3s ease-in-out infinite;
 }
 
 .bar1::before {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .bar1::after {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .bar2::before {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .bar2::after {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  animation-delay: 0.9s;
 }
 
 .bar3::before {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 .bar3::after {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 /*page header*/
@@ -2789,7 +2698,6 @@ input.qty-val {
 }
 
 .social-icons li:hover i {
-  -webkit-animation: toTopFromBottom 0.2s forwards;
   animation: toTopFromBottom 0.2s forwards;
 }
 
@@ -6278,7 +6186,6 @@ h6.post-title {
 }
 
 .sticky-bar.stick {
-  -webkit-animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
   position: fixed;
